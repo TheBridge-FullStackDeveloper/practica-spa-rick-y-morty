@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  </head>
+  <body>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item" id="homeNav">Home</li>
+      <li class="breadcrumb-item active" id="formNav">Form</li>
+    </ol>
+    <div class="charactersContainer">
+      <button type="button" id="prevPageBtn" class="btn btn-secondary">
+        Prev
+      </button>
+      <div class="btn-group" role="group" aria-label="Third group">
+        <button
+          type="button"
+          id="actualPage"
+          class="btn btn-secondary"
+        ></button>
+      </div>
+      <button type="button" id="nextPageBtn" class="btn btn-secondary">
+        Next
+      </button>
+
+      <div class="personajes d-flex flex-wrap"></div>
+    </div>
+    <div class="formContainer d-none">
+      <form class="container">
+        <div class="form-group">
+            <label for="name" class="form-label mt-4">Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="gender" class="form-label mt-4">Gender</label>
+            <input type="text" class="form-control" id="gender" aria-describedby="genderHelp" placeholder="Enter gender">
+          </div>
+          <div class="form-group">
+            <label for="status" class="form-label mt-4">Status</label>
+            <input type="text" class="form-control" id="status" aria-describedby="statusHelp" placeholder="Enter status">
+          </div>
+          <div class="form-group">
+            <label for="image" class="form-label mt-4">Image URL</label>
+            <input type="text" class="form-control" id="image" aria-describedby="imageHelp" placeholder="Enter image">
+          </div>
+          <button type="button" class="btn btn-primary mt-3" id="btn">Create Character</button>
+
+      </form>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
